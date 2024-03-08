@@ -11,6 +11,6 @@ export default defineConfig({
     optimizeDeps: {
       exclude: ['@resvg/resvg-js'],
     },
-    base: 'portfolio'
+    base: '/portfolio'
   },
 });
