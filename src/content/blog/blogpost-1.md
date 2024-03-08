@@ -5,7 +5,6 @@ author: "Pouya Pournasir"
 tags:
   - Robot Operating System
   - Python
-  - Tkinter
   - User Experience
 imgUrl: '../../assets/jackal.png'
 description: Independently built a large robotic system with more than 4,000 lines of code. Incorporated the Model-View-Controller (MVC) architecture to modularize dialogue and avatar system.

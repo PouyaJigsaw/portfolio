@@ -2,6 +2,7 @@
 import LocalFont from '../generic/LocalFont.astro';
 import { ViewTransitions } from 'astro:transitions';
 
+
 interface Props {
   title: string;
   description: string;
@@ -45,7 +46,7 @@ const { title, description, ogImage } = Astro.props;
   <meta property='twitter:image' content={ogImage} />
 
   <link rel='canonical' href={canonicalURL} />
-  <link rel='icon' type='image/svg' href='/pumpkin.svg' />
+  <link rel='icon' type='image/svg+xml' href='public/pumpkin.svg' />
 
   <title>{title}</title>
 

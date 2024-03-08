@@ -4,9 +4,8 @@ pubDate: 12/31/2022 12:05
 author: "Pouya Pournasir"
 tags:
   - Unity
-  - C Sharp
   - OpenXR
-  - Interction Design
+  - Interaction Design
   - AB Testing
 imgUrl: '../../assets/hololens2.jpg'
 description: Developed an experimental Mixed Reality solution for inspection of construction products. Designed interactions that reveal information of the product and its components.
