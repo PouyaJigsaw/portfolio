@@ -17,9 +17,7 @@ layout: '../../layouts/BlogPost.astro'
 
 Precise inspection of construction products like concrete pre-casts demands meticulous attention to 2D blueprints. The slightest error can lead to significant time and energy wastage for construction companies. Leveraging Mixed Reality technologies holds promising potential in optimizing the inspection process, effectively reducing costs. In collaboration with Offsite Construction Research Centre (OCRC) and Spatial Computing Lab (SPECTRAL) from UNB, we have proposed a Mixed Reality solution to tackle this challenge. Our solution, tested with civil engineers using Microsoft HoloLens, demonstrated improved error identification, reduced cognitive workload, and a preference for our approach over traditional 2D blueprint analysis. This research project is funded by MITACS and Strescon Ltd. 
 
-<div style="display: flex; justify-content: center; align-items: center;">
-    <img src="../../assets/hololens2_1.png" alt="Image 1"/>
-</div>
+   ![Image 1](src/assets/hololens2_1.png)
 
 # Implementation
 
@@ -42,6 +40,5 @@ In this prototype, we have created experimental features such as:
 
 These features collectively enhance the adaptability, accessibility, and functionality of our solution, providing construction companies with a comprehensive and customizable inspection tool.
 
-<div style="display: flex; justify-content: center; align-items: center;">
-    <img src="../../assets/hololens2_2.png" alt="Image 2"/>
-</div>
+
+   ![Image 2](src/assets/hololens2_2.png)
