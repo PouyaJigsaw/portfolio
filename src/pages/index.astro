@@ -3,8 +3,12 @@ import Layout from "@layouts/Default.astro";
 import RecentBlogPosts from "@components/generic/RecentBlogPosts.astro";
 import MobileSocials from "@components/home/MobileSocials.astro";
 import { Pill } from "@eliancodes/brutal-ui";
-import { Button } from "@eliancodes/brutal-ui";
 import { Card } from "@eliancodes/brutal-ui";
+import { Image } from 'astro:assets';
+import GuilanLogo from "../assets/guilan.png";
+import UNBLogo from "../assets/UNB_seal.png";
+import Portrait from "../assets/portfolio_image.jpg"
+
 
 const builtWith = [
   { name: "Astro", url: "https://astro.build/" },
@@ -35,22 +39,11 @@ const builtWith = [
       <div class="col-span-2">
         <Card color="#F2A60A">
           <div class="flex flex-col justify-between items-start gap-4">
-            <img
+            <Image
               class="h-auto rounded-lg border-3 border-black"
-              src="src/assets/portfolio_image.jpg"
+              src={Portrait}
               alt="Portfolio picture"
-            />
-            <!-- <p class='mt-4 outfit text-2xl md:text-5xl lg:text-7xl'>
-              Brutal theme for <a
-                class='text-white'
-                target='_blank'
-                href='https://astro.build/'>Astro</a
-              >
-            </p>
-            <p class='mt-2 outfit text-xl md:text-3xl lg:text-5xl'>
-              A minimalistic, neobrutalism theme for Astro.
-            </p> -->
-
+            />     
             <p class="poppins text-justify">
               I am a recent computer science graduate student with a passion for
               user experience design and game development. During My master's I
@@ -191,9 +184,9 @@ const builtWith = [
               Education
             </h2>            
             <div class="grid md:grid-cols-3 gap-8 mt-4">
-              <img
+              <Image
                 class="col-span-1 ml-2 h-auto w-25 h-30"
-                src="src/assets/UNB_seal.png"
+                src={UNBLogo}
                 alt="UNB Logo"
               />
               <div class="ml-5 col-span-2">
@@ -214,9 +207,9 @@ const builtWith = [
             </div>
             
             <div class="grid md:grid-cols-3 gap-8 mt-4">
-              <img
+              <Image
                 class="col-span-1 ml-2 h-auto w-25 h-30"
-                src="src/assets/guilan.png"
+                src={GuilanLogo}
                 alt="Guilan Logo"
               />
               <div class="col-span-2">
