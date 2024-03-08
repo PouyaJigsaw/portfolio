@@ -1,41 +1,46 @@
 ---
-import Layout from '@layouts/Default.astro';
-import RecentBlogPosts from '@components/generic/RecentBlogPosts.astro';
-import MobileSocials from '@components/home/MobileSocials.astro';
-import { Pill } from '@eliancodes/brutal-ui';
-import { Button } from '@eliancodes/brutal-ui';
-import { Card } from '@eliancodes/brutal-ui';
+import Layout from "@layouts/Default.astro";
+import RecentBlogPosts from "@components/generic/RecentBlogPosts.astro";
+import MobileSocials from "@components/home/MobileSocials.astro";
+import { Pill } from "@eliancodes/brutal-ui";
+import { Button } from "@eliancodes/brutal-ui";
+import { Card } from "@eliancodes/brutal-ui";
 
 const builtWith = [
-  { name: 'Astro', url: 'https://astro.build/' },
-  { name: 'UnoCSS', url: 'https://uno.antfu.me/' },
+  { name: "Astro", url: "https://astro.build/" },
+  { name: "UnoCSS", url: "https://uno.antfu.me/" },
   {
-    name: 'Content Collections',
-    url: 'https://docs.astro.build/en/guides/content-collections/',
+    name: "Content Collections",
+    url: "https://docs.astro.build/en/guides/content-collections/",
   },
-  { name: 'RSS', url: 'https://docs.astro.build/en/guides/rss/' },
+  { name: "RSS", url: "https://docs.astro.build/en/guides/rss/" },
   {
-    name: 'Sitemap',
-    url: 'https://docs.astro.build/en/guides/integrations-guide/sitemap/',
+    name: "Sitemap",
+    url: "https://docs.astro.build/en/guides/integrations-guide/sitemap/",
   },
-  { name: 'Vercel', url: 'https://vercel.com' },
-  { name: 'TypeScript', url: 'https://www.typescriptlang.org/' },
+  { name: "Vercel", url: "https://vercel.com" },
+  { name: "TypeScript", url: "https://www.typescriptlang.org/" },
 ];
 ---
 
 <Layout
-  title='Home'
-  pageTitle='Brutal Theme | Home'
-  description='Brutal is a minimalistic, neobrutalism theme for Astro.'
+  title="Pouya Pournasir Portfolio"
+  pageTitle="Pouya Pournasir Portfolio"
+  description="Brutal is a minimalistic, neobrutalism theme for Astro."
 >
-  <main class='bg-pink p-6'>
+  <main style="background-color: #F4F880;" class="p-6">
     <MobileSocials />
-    <section id='about' class='grid md:grid-cols-8 gap-8 mt-4'>
-      <h2 class='hidden'>About Brutal</h2>
-      <div class='col-span-4'>
-        <Card>
-          <div class='flex flex-col justify-between items-start gap-4'>
-            <p class='mt-4 outfit text-2xl md:text-5xl lg:text-7xl'>
+    <section id="about" class="grid md:grid-cols-8 gap-8 mt-4">
+      <h2 class="hidden">About Brutal</h2>
+      <div class="col-span-2">
+        <Card color="#F2A60A">
+          <div class="flex flex-col justify-between items-start gap-4">
+            <img
+              class="h-auto rounded-lg border-3 border-black"
+              src="src/assets/portfolio_image.jpg"
+              alt="Portfolio picture"
+            />
+            <!-- <p class='mt-4 outfit text-2xl md:text-5xl lg:text-7xl'>
               Brutal theme for <a
                 class='text-white'
                 target='_blank'
@@ -44,14 +49,23 @@ const builtWith = [
             </p>
             <p class='mt-2 outfit text-xl md:text-3xl lg:text-5xl'>
               A minimalistic, neobrutalism theme for Astro.
+            </p> -->
+
+            <p class="poppins text-justify">
+              I am a recent computer science graduate student with a passion for
+              user experience design and game development. During My master's I
+              have learned about Human-Computer Interaction and leveraged my
+              technical skills to provide novel solutions to human problems. My
+              thesis was about making AI in robotic teleoperation systems
+              social, to increase trust in the system. I used my game-design
+              skills to setup an experiment and evaluated my solution using HCI
+              methodologies.
             </p>
-            <Button target={'_self'} href='/blog/'>
-              Check out the blog &rarr;
-            </Button>
           </div>
         </Card>
       </div>
-      <div class='col-span-2'>
+      <RecentBlogPosts />
+      <!-- <div class='col-span-2'>
         <Card>
           <h2 class='text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif'>
             Brutal is built with
@@ -88,8 +102,142 @@ const builtWith = [
             customize. Mainly meant to power blogs and personal websites.
           </p>
         </Card>
+      </div> -->
+    </section>
+
+    <section id="skills/education" class="grid md:grid-cols-8 gap-8 mt-4">
+      <div class="mt-5 col-span-4 ">
+        <Card color="#961B06">
+          <div class="flex flex-col justify-between items-start gap-4">
+            <h2 class="text-white text-2xl md:text-4xl lg:text-6xl mb-5 dm-serif">
+              Skills
+            </h2>
+            <h3 class="text-white text-l md:text-xl lg:text-2xl sanchez">
+             Game & XR development
+            </h3>
+            <div class="flex justify-between items-center">
+              <ul class="flex gap-x-3 mb-4">
+                <li>
+                  <Pill>Unity</Pill>
+                </li>
+                <li>
+                  <Pill>C#</Pill>
+                </li>
+                <li>
+                  <Pill>MixedRealityToolkit</Pill>
+                </li>
+                <li>
+                  <Pill>OpenXR</Pill>
+                </li>
+                <li>
+                  <Pill>Game Design</Pill>
+                </li>
+              </ul>
+             
+            </div>
+            <h3 class="text-white text-l md:text-xl lg:text-2xl sanchez">
+             User Research
+             </h3>
+             <div class="flex  justify-between items-center">
+               <ul class="flex gap-x-2 mb-4">
+                 <li>
+                   <Pill>Interaction Design</Pill>
+                 </li>
+                 <li>
+                   <Pill>A/B Testing</Pill>
+                 </li>
+                 <li>
+                   <Pill>Prototyping</Pill>
+                 </li>
+                 <li>
+                   <Pill>Interview</Pill>
+                 </li>
+                 <li>
+                   <Pill>User Journey</Pill>
+                 </li>
+                 <li>
+                  <Pill>Persona</Pill>
+                </li>
+               </ul>
+             </div>
+             <h3 class=" text-white text-l md:text-xl lg:text-2xl sanchez">
+              Others
+             </h3>
+             <div class="flex justify-between items-center">
+               <ul class="flex gap-x-3 mb-1">
+                 <li>
+                   <Pill>Robot Operating System</Pill>
+                 </li>
+                 <li>
+                   <Pill>C/C++</Pill>
+                 </li>
+                 <li>
+                   <Pill>Linux</Pill>
+                 </li>
+                 <li>
+                   <Pill>Python</Pill>
+                 </li>
+                 <li>
+                   <Pill>HTML/CSS/JS</Pill>
+                 </li>
+               </ul>
+          </div>
+        </Card>
+      </div>
+      <div class="mt-5 text-white col-span-4">
+        <Card color="#D7620F">
+          <div class="flex flex-col justify-between items-start gap-4">
+            <h2 class="text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif">
+              Education
+            </h2>            
+            <div class="grid md:grid-cols-3 gap-8 mt-4">
+              <img
+                class="col-span-1 ml-2 h-auto w-25 h-30"
+                src="src/assets/UNB_seal.png"
+                alt="UNB Logo"
+              />
+              <div class="ml-5 col-span-2">
+                <h3 class="text-xl md:text-2xl lg:text-2xl sanchez">
+                  Master of Computer Science
+                </h3>
+                <h4
+                  class=" text-s md:text-m lg:text-2l mb-1 sanchez italic"
+                >
+                  University of New Brunswick (Canada)
+                </h4>
+                <h4
+                  class=" text-s md:text-m lg:text-2l mb-1 sanchez italic"
+                >
+                  Sep 2021 - Dec 2023
+                </h4>
+              </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mt-4">
+              <img
+                class="col-span-1 ml-2 h-auto w-25 h-30"
+                src="src/assets/guilan.png"
+                alt="Guilan Logo"
+              />
+              <div class="col-span-2">
+                <h3 class="text-xl md:text-2xl lg:text-2xl sanchez">
+                  Bachelor of Computer Engineering
+                </h3>
+                <h4
+                  class="text-s md:text-m lg:text-2l mb-1 sanchez italic"
+                >
+                  University of Guilan (Iran)
+                </h4>
+                <h4
+                  class="text-s md:text-m lg:text-2l mb-4 sanchez italic"
+                >
+                  Sep 2015 - Jan 2020
+                </h4>
+              </div>
+            </div>
+          </div>
+        </Card>
       </div>
     </section>
-    <RecentBlogPosts />
   </main>
 </Layout>

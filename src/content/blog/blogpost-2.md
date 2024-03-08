@@ -1,47 +1,47 @@
 ---
-title: Blogpost 2
+title: HoloLens 2 for Construction
 pubDate: 12/31/2022 12:05
-author: "Elian Van Cutsem"
+author: "Pouya Pournasir"
 tags:
-  - Astro
-  - WebDev
-  - Programming
-imgUrl: '../../assets/astro.jpeg'
-description: Lorem markdownum longo os thyrso telum, continet servat fetus nymphae, vox nocte sedesque, decimo. Omnia esse, quam sive; conplevit illis indestrictus admovit dedit sub quod protectus, impedit non.
+  - Unity
+  - C Sharp
+  - OpenXR
+  - Interction Design
+  - AB Testing
+imgUrl: '../../assets/hololens2.jpg'
+description: Developed an experimental Mixed Reality solution for inspection of construction products. Designed interactions that reveal information of the product and its components.
 layout: '../../layouts/BlogPost.astro'
 ---
 
-## Deorum petiit ignis
+# Introduction
 
-Lorem markdownum longo os thyrso telum, continet servat fetus nymphae, *vox
-nocte sedesque*, decimo. Omnia esse, quam sive; conplevit illis indestrictus
-admovit dedit sub quod protectus, impedit non.
+Precise inspection of construction products like concrete pre-casts demands meticulous attention to 2D blueprints. The slightest error can lead to significant time and energy wastage for construction companies. Leveraging Mixed Reality technologies holds promising potential in optimizing the inspection process, effectively reducing costs. In collaboration with Offsite Construction Research Centre (OCRC) and Spatial Computing Lab (SPECTRAL) from UNB, we have proposed a Mixed Reality solution to tackle this challenge. Our solution, tested with civil engineers using Microsoft HoloLens, demonstrated improved error identification, reduced cognitive workload, and a preference for our approach over traditional 2D blueprint analysis. This research project is funded by MITACS and Strescon Ltd. 
 
-## Iovis late orbem Perseus sunt
+<div style="display: flex; justify-content: center; align-items: center;">
+    <img src="../../assets/hololens2_1.png" alt="Image 1"/>
+</div>
 
-Aras reperire, sui motis correpti coniunx Onetor amore ferire lacertis, petiit.
-Bis pallor et mecum me, igne patruelibus *tendebam*, vultu sterilique terruerat
-*tempore* medium aera **eadem Mittor**.
+# Implementation
 
-- Non turba loca dederunt primordia ineamus Dictys
-- Tanti amat mundus sedula
-- Potuissent aetas parili coniuge se lumina breve
-- Tamen ille crepitantibus ulla coeperunt quibus iugulo
-- Pindusque solacia luctataque felix
+Our solution offers distinct advantages over conventional alternatives like Trimble software, primarily due to its utilization of the flexible Unity Engine platform. This allows companies to tailor the system to their specific requirements and offers the potential for additional feature integration. The solution is implemented by me.
 
-## Longum minus sic saepe
+In this prototype, we have created experimental features such as:
 
-Genu cupiens quoque: cum dolor: sollicitive cantu, et piae Leuconoe, huius non
-nil tuli Peleusque rauca. Et alvum cuncti Hippodamas meritis nec coniunx ausa,
-pete. Congestaque nisi nullus poena. Tanto cum, curvis vulnera quod optatis,
-trahens conplexa saepe.
+1.	Dialog Pop-ups displaying detailed information for each component – See Figure 1.
 
-Hominum quo. Signa germanaeque iuvat at feruntur precantibus corpus praebuerat
-excipit mixtaeque inferior, haec percepit regum: nec nec sit ferenti.
+2.	Ability to hide and reposition individual components for a more detailed inspection.
 
-## Geminas namque quod referitur argenteus aderat superstes
+3.	Implementation of a dynamic Virtual Ruler to assist in measurements – See Figure 2
 
-Insistere pugno. Cum morae vigilantibus dulces Cycnus: neque cum sororis.
+4.	Integration of a Hand-Menu for convenient access to each feature.
 
-Hac Aestas solet docebo tandem tamquam omnis vitiantur mitte, vatis in animique
-infelix passimque. Superasset onus.
+5.	Implementation of Speech Commands aimed at reducing cognitive workload.
+
+6.	Varied presentations of the 3D model, such as Overlay and Side-By-Side – See Figure 1.
+
+
+These features collectively enhance the adaptability, accessibility, and functionality of our solution, providing construction companies with a comprehensive and customizable inspection tool.
+
+<div style="display: flex; justify-content: center; align-items: center;">
+    <img src="../../assets/hololens2_2.png" alt="Image 2"/>
+</div>
