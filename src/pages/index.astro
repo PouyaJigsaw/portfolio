@@ -4,10 +4,11 @@ import RecentBlogPosts from "@components/generic/RecentBlogPosts.astro";
 import MobileSocials from "@components/home/MobileSocials.astro";
 import { Pill } from "@eliancodes/brutal-ui";
 import { Card } from "@eliancodes/brutal-ui";
-import { Image } from "astro:assets";
+import { Image } from 'astro:assets';
 import GuilanLogo from "../assets/guilan.png";
 import UNBLogo from "../assets/UNB_seal.png";
-import Portrait from "../assets/portfolio_image.jpg";
+import Portrait from "../assets/portfolio_image.jpg"
+
 
 const builtWith = [
   { name: "Astro", url: "https://astro.build/" },
@@ -33,19 +34,17 @@ const builtWith = [
 >
   <main style="background-color: #F4F880;" class="p-6">
     <MobileSocials />
-    <section id="about" class="flex flex-wrap gap-8 mt-4">
+    <section id="about" class="grid md:grid-cols-8 gap-8 mt-4">
       <h2 class="hidden">About Brutal</h2>
-      <div class="basis-1/5 grow">
+      <div class="col-span-2">
         <Card color="#F2A60A">
-          <div
-            class="flex flex-col flex-wrap sm:flex-row lg:flex-col justify-between items-start gap-4"
-          >
+          <div class="flex flex-col justify-between items-start gap-4">
             <Image
-              class="h-auto md:w-1/2 lg:w-full rounded-lg border-3 border-black"
+              class="h-auto rounded-lg border-3 border-black"
               src={Portrait}
               alt="Portfolio picture"
-            />
-            <p class="poppins text-justify md:basis-[47%]">
+            />     
+            <p class="poppins text-justify">
               I am a recent computer science graduate student with a passion for
               user experience design and game development. During My master's I
               have learned about Human-Computer Interaction and leveraged my
@@ -99,134 +98,138 @@ const builtWith = [
       </div> -->
     </section>
 
-    <section id="skills/education" class="mt-10">
-      <div class="flex flex-wrap lg:flex-nowrap grow gap-8">
-        <div class="md:basis-1/2 grow">
-          <Card color="#961B06">
-            <div class="flex flex-col justify-between items-start gap-4">
-              <h2
-                class="text-white text-2xl md:text-4xl lg:text-6xl mb-5 dm-serif"
-              >
-                Skills
-              </h2>
-              <h3 class="text-white text-l md:text-xl lg:text-2xl sanchez">
-                Game & XR development
-              </h3>
-              <div class="flex justify-between items-center">
-                <ul class="flex gap-x-3 mb-4">
-                  <li>
-                    <Pill>Unity</Pill>
-                  </li>
-                  <li>
-                    <Pill>C#</Pill>
-                  </li>
-                  <li>
-                    <Pill>MixedRealityToolkit</Pill>
-                  </li>
-                  <li>
-                    <Pill>OpenXR</Pill>
-                  </li>
-                  <li>
-                    <Pill>Game Design</Pill>
-                  </li>
-                </ul>
-              </div>
-              <h3 class="text-white text-l md:text-xl lg:text-2xl sanchez">
-                User Research
-              </h3>
-              <div class="flex justify-between items-center">
-                <ul class="flex gap-x-2 mb-4">
-                  <li>
-                    <Pill>Interaction Design</Pill>
-                  </li>
-                  <li>
-                    <Pill>A/B Testing</Pill>
-                  </li>
-                  <li>
-                    <Pill>Prototyping</Pill>
-                  </li>
-                  <li>
-                    <Pill>Interview</Pill>
-                  </li>
-                  <li>
-                    <Pill>User Journey</Pill>
-                  </li>
-                  <li>
-                    <Pill>Persona</Pill>
-                  </li>
-                </ul>
-              </div>
-              <h3 class="text-white text-l md:text-xl lg:text-2xl sanchez">
-                Others
-              </h3>
-              <div class="flex justify-between items-center">
-                <ul class="flex gap-x-3 mb-1">
-                  <li>
-                    <Pill>Robot Operating System</Pill>
-                  </li>
-                  <li>
-                    <Pill>C/C++</Pill>
-                  </li>
-                  <li>
-                    <Pill>Linux</Pill>
-                  </li>
-                  <li>
-                    <Pill>Python</Pill>
-                  </li>
-                  <li>
-                    <Pill>HTML/CSS/JS</Pill>
-                  </li>
-                </ul>
+    <section id="skills/education" class="grid md:grid-cols-8 gap-8 mt-4">
+      <div class="mt-5 col-span-4 ">
+        <Card color="#961B06">
+          <div class="flex flex-col justify-between items-start gap-4">
+            <h2 class="text-white text-2xl md:text-4xl lg:text-6xl mb-5 dm-serif">
+              Skills
+            </h2>
+            <h3 class="text-white text-l md:text-xl lg:text-2xl sanchez">
+             Game & XR development
+            </h3>
+            <div class="flex justify-between items-center">
+              <ul class="flex gap-x-3 mb-4">
+                <li>
+                  <Pill>Unity</Pill>
+                </li>
+                <li>
+                  <Pill>C#</Pill>
+                </li>
+                <li>
+                  <Pill>MixedRealityToolkit</Pill>
+                </li>
+                <li>
+                  <Pill>OpenXR</Pill>
+                </li>
+                <li>
+                  <Pill>Game Design</Pill>
+                </li>
+              </ul>
+             
+            </div>
+            <h3 class="text-white text-l md:text-xl lg:text-2xl sanchez">
+             User Research
+             </h3>
+             <div class="flex  justify-between items-center">
+               <ul class="flex gap-x-2 mb-4">
+                 <li>
+                   <Pill>Interaction Design</Pill>
+                 </li>
+                 <li>
+                   <Pill>A/B Testing</Pill>
+                 </li>
+                 <li>
+                   <Pill>Prototyping</Pill>
+                 </li>
+                 <li>
+                   <Pill>Interview</Pill>
+                 </li>
+                 <li>
+                   <Pill>User Journey</Pill>
+                 </li>
+                 <li>
+                  <Pill>Persona</Pill>
+                </li>
+               </ul>
+             </div>
+             <h3 class=" text-white text-l md:text-xl lg:text-2xl sanchez">
+              Others
+             </h3>
+             <div class="flex justify-between items-center">
+               <ul class="flex gap-x-3 mb-1">
+                 <li>
+                   <Pill>Robot Operating System</Pill>
+                 </li>
+                 <li>
+                   <Pill>C/C++</Pill>
+                 </li>
+                 <li>
+                   <Pill>Linux</Pill>
+                 </li>
+                 <li>
+                   <Pill>Python</Pill>
+                 </li>
+                 <li>
+                   <Pill>HTML/CSS/JS</Pill>
+                 </li>
+               </ul>
+          </div>
+        </Card>
+      </div>
+      <div class="mt-5 text-white col-span-4">
+        <Card color="#D7620F">
+          <div class="flex flex-col justify-between items-start gap-4">
+            <h2 class="text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif">
+              Education
+            </h2>            
+            <div class="grid md:grid-cols-3 gap-8 mt-4">
+              <Image
+                class="col-span-1 ml-2 h-auto w-25 h-30"
+                src={UNBLogo}
+                alt="UNB Logo"
+              />
+              <div class="ml-5 col-span-2">
+                <h3 class="text-xl md:text-2xl lg:text-2xl sanchez">
+                  Master of Computer Science
+                </h3>
+                <h4
+                  class=" text-s md:text-m lg:text-2l mb-1 sanchez italic"
+                >
+                  University of New Brunswick (Canada)
+                </h4>
+                <h4
+                  class=" text-s md:text-m lg:text-2l mb-1 sanchez italic"
+                >
+                  Sep 2021 - Dec 2023
+                </h4>
               </div>
             </div>
-          </Card>
-        </div>
-        <div class="text-white md:basis-1/2 grow">
-          <Card color="#D7620F">
-            <div class="flex flex-col justify-between items-start gap-4">
-              <h2 class="text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif">
-                Education
-              </h2>
-              <div class="flex flex-col gap-8 mt-4">
-                <Image
-                  class="ml-2 h-auto w-25 h-30"
-                  src={UNBLogo}
-                  alt="UNB Logo"
-                />
-                <div class="ml-5">
-                  <h3 class="text-xl md:text-2xl lg:text-2xl sanchez">
-                    Master of Computer Science
-                  </h3>
-                  <h4 class="text-s md:text-m lg:text-2l mb-1 sanchez italic">
-                    University of New Brunswick (Canada)
-                  </h4>
-                  <h4 class="text-s md:text-m lg:text-2l mb-1 sanchez italic">
-                    Sep 2021 - Dec 2023
-                  </h4>
-                </div>
-              </div>
-
-              <div class="flex flex-col gap-8 mt-4">
-                <Image
-                  class="col-span-1 ml-2 h-auto w-25 h-30"
-                  src={GuilanLogo}
-                  alt="Guilan Logo"
-                />
-                <div class="col-span-2">
-                  <h3 class="text-xl md:text-2xl lg:text-2xl sanchez">
-                    Bachelor of Computer Engineering
-                  </h3>
-                  <h4 class="text-s md:text-m lg:text-2l mb-1 sanchez italic">
-                    University of Guilan (Iran)
-                  </h4>
-                  <h4 class="text-s md:text-m lg:text-2l mb-4 sanchez italic">
-                    Sep 2015 - Jan 2020
-                  </h4>
-                </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mt-4">
+              <Image
+                class="col-span-1 ml-2 h-auto w-25 h-30"
+                src={GuilanLogo}
+                alt="Guilan Logo"
+              />
+              <div class="col-span-2">
+                <h3 class="text-xl md:text-2xl lg:text-2xl sanchez">
+                  Bachelor of Computer Engineering
+                </h3>
+                <h4
+                  class="text-s md:text-m lg:text-2l mb-1 sanchez italic"
+                >
+                  University of Guilan (Iran)
+                </h4>
+                <h4
+                  class="text-s md:text-m lg:text-2l mb-4 sanchez italic"
+                >
+                  Sep 2015 - Jan 2020
+                </h4>
               </div>
             </div>
-          </Card>
-        </div>
+          </div>
+        </Card>
       </div>
     </section>
   </main>
