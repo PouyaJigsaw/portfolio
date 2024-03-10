@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 for Construction
-pubDate: 12/31/2022 12:05
+pubDate: 2023-10-30 12:05
 author: "Pouya Pournasir"
 tags:
   - Unity

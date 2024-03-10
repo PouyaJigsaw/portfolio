@@ -1,7 +1,7 @@
 ---
 title: Project "Dark Maze"
 description: Implemented a proof-of-concept for a unique thriller android video game in a 3-month period.Introduced innovative interaction elements to support top-down camera angle.
-pubDate: 2023-02-14 23:49
+pubDate: 2019-08-15 23:49
 author: Pouya Pournasir
 tags: 
   - Unity

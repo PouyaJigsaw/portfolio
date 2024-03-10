@@ -1,6 +1,6 @@
 ---
 title: Social Avatars for Teleoperation
-pubDate: 11/09/2022 14:25
+pubDate: 2023-12-20 14:25
 author: "Pouya Pournasir"
 tags:
   - Robot Operating System
