@@ -15,7 +15,7 @@ const { title, description } = content;
   description={description as string}
   ogImage={ogImage}
 >
-  <main class='p-6 flex justify-center'>
+  <main class='p-6 flex flex-wrap justify-center'>
     <BlogSideBar headings={headings} />
     <BlogContent content={content}>
       <slot />

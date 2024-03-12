@@ -14,7 +14,7 @@ const { title, imgAlt, imgSrc, description } = Astro.props;
 
 <Card color='white'>
   <h3 class='poppins text-lg md:text-xl'>{title}</h3>
-  <div class="flex items-center justify-center">
+  <div class="flex flex-wrap items-center justify-center">
     <div class='rounded-lg border-3 border-black my-4 h-56 w-100'>
       <Image
         src={imgSrc}
