@@ -15,13 +15,20 @@ Our main goal was to find out whether adding social elements to an interface wou
 
 ## Design Criteria
 We designed a scenario where the operator has to control a shared autonomy robot and handle two tasks at the same time. In some cases, one task can be delegated to the robot if the operator trusts the robot’s autonomous capabilities.  
-We had to design a video-game like mission for the operator and engineer each part of the journey (such as a linear video game like uncharted) so that we are sure about we are analyzing the right data. We also had to engineer the number of mistakes the operator and the robot did in the experiment, at the right place and the right time. The main challenge was to priming them to believe the mistakes we made by themselves, not the creator of the system!
+We had to design a video-game like mission for the operator to reach our experiment goals. We inspired from video games like Uncharted or Call of Duty to create a rigid, non-breakable narrative while the non-controllable variables in a robotic mission is much more. We had to engineer each part of the journey so that we are sure about we are analyzing the right data. We also had to engineer the number of mistakes the operator and the robot did in the experiment, at the right place and the right time. The main challenge was to priming them to believe the mistakes we made by themselves, not the creator of the system!
   ![Image 1](src/assets/jackal.png)
   *Two conditions of the experiment: social and non-social. which one increase trust?*
 
-We used the narrative of trust formation, trust violation, and trust repair in our experiment. Before the experiment, the participant does a practice session where they get familiar with the system and the agent. This is where the trust formation happens, also the user will build an expectation of the difficulty of both tasks. In the real experiment, the agent makes a series of mistakes and violates trust. After the robot uses trust repair strategies, the operator can choose whether to delegate the task or not. This choice should depend on the amount of trust the operator puts on the robot.
-To emphasize on the importance of this choice, we linked the participant’s compensation to their performance while using the system, which means the robot’s mistake can reduce their compensation. Since performance of each participant can be different, we staged every part of the experiment to make sure everyone experiences the same narrative of trust formation, violation, and repair.
-The key point in this experiment is where the trust repair happens. While social cues can affect each stage of the trust cycle, studies in social HRI have shown that social repair strategies have the potential to restore trust. We used the explicitly social agent’s sad emotion while acknowledging mistake by using the word “sorry”, and then promises to do better following the term “I got ya buddy” as an attempt to create a bond.
+To create our social interface, we created a social agent using human-like language and simple
+avatar with animations in comparison to a conventional machine-like terminal. Both represents the
+AI (or Agent) that is embedded into the robot and communicates with the user who controls the robot.
+We had to create a narrative where: 
+
+1. Trust forms between user and agent (trust formation).
+2. the agent breaks trust by performing badly (trust violation). 
+3. the agent asks the user about delegating tasks to itself in the future.
+
+The interface was inspired from video games such as Star Fox 64. I used [State Pattern][13] to control each part of the experiment.
 
 
 
@@ -69,17 +76,6 @@ before switching to this [solution][12].
 [12]: https://github.com/PouyaJigsaw/teleop-interface/blob/master/src/test/src/main/view/thread_pool.py
 
 ## Experiment Design
-To create our social interface, we created a social agent using human-like language and simple
-avatar with animations in comparison to a conventional machine-like terminal. Both represents the
-AI (or Agent) that is embedded into the robot and communicates with the user who controls the robot.
-We had to create a narrative where: 
-
-1. Trust forms between user and agent (trust formation).
-2. the agent breaks trust by performing badly (trust violation). 
-3. the agent asks the user about delegating tasks to itself in the future.
-
-All of these had to happen in a rigid narrative, like Uncharted, or Call of Duty (single player) where the game is linear, so each person experiences
-the same narrative regardless of their performance. I used [State Pattern][13] to control each part of the experiment.
 
 ![Interface](src/assets/interface1.png)
 ![Interface 2](src/assets/interface2.png)
