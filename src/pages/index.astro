@@ -24,6 +24,14 @@ const builtWith = [
   { name: "Vercel", url: "https://vercel.com" },
   { name: "TypeScript", url: "https://www.typescriptlang.org/" },
 ];
+
+
+const backgroundColor = "#fef6e4";
+const bioColor = "#f3d2c1";
+const skillsColor = "#f582ae";
+const educationColor = "#001858";
+const recentBlogPostsColor = "#8bd3dd";
+
 ---
 
 <Layout
@@ -31,12 +39,12 @@ const builtWith = [
   pageTitle="Pouya Pournasir Portfolio"
   description="For the curse of life is the curse of want' so you peer, into the fog, in hope for answers."
 >
-  <main style="background-color: #F4F880;" class="p-6">
+  <main style={{ backgroundColor: `${backgroundColor}` }} class="p-6">
     <MobileSocials />
     <section id="about" class="flex flex-wrap gap-8 mt-4">
       <h2 class="hidden">About Brutal</h2>
       <div class="basis-1/5 grow">
-        <Card color="#F2A60A">
+        <Card color= {bioColor}>
           <div
             class="flex flex-col flex-wrap sm:flex-row lg:flex-col justify-between items-start gap-4"
           >
@@ -58,7 +66,7 @@ const builtWith = [
           </div>
         </Card>
       </div>
-      <RecentBlogPosts />
+      <RecentBlogPosts color={recentBlogPostsColor} />
       <!-- <div class='col-span-2'>
         <Card>
           <h2 class='text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif'>
@@ -100,20 +108,20 @@ const builtWith = [
     </section>
 
     <section id="skills/education" class="mt-10">
-      <div class="flex flex-wrap lg:flex-nowrap grow gap-8">
+      <div class=" flex flex-wrap lg:flex-nowrap grow gap-8">
         <div class="md:basis-1/2 grow">
-          <Card color="#961B06">
+          <Card color={skillsColor}>
             <div class="flex flex-col flex-wrap justify-between items-start gap-4">
               <h2
-                class="text-white text-2xl md:text-4xl lg:text-6xl mb-5 dm-serif"
+                class=" text-2xl md:text-4xl lg:text-6xl mb-5 dm-serif"
               >
-                Skills
+              Skills
               </h2>
               <div class="flex flex-wrap">
-              <h3 class="text-white text-l md:text-xl lg:text-2xl sanchez">
+              <h3 class="text-l md:text-xl lg:text-2xl sanchez">
                 Game & XR development
               </h3>
-                <ul class="flex gap-x-3 mb-4">
+                <ul class=" text-black flex gap-x-3 mb-4">
                   <li>
                     <Pill>Unity</Pill>
                   </li>
@@ -130,11 +138,10 @@ const builtWith = [
                     <Pill>Game Design</Pill>
                   </li>
                 </ul>
-              <h3 class="text-white text-l md:text-xl lg:text-2xl sanchez">
+              <h3 class=" text-l md:text-xl lg:text-2xl sanchez">
                 User Research
-              </h3>
-             
-                <ul class="flex gap-x-2 mb-4">
+              </h3>   
+                <ul class="text-black flex gap-x-2 mb-4">
                   <li>
                     <Pill>Interaction Design</Pill>
                   </li>
@@ -148,11 +155,10 @@ const builtWith = [
                     <Pill>Persona</Pill>
                   </li>
                 </ul>
-             <h3 class=" ml-2 text-white text-l md:text-xl lg:text-2xl sanchez">
+             <h3 class=" ml-2 text-l md:text-xl lg:text-2xl sanchez">
                 Others
-              </h3> 
-
-                <ul class="flex gap-x-3 mb-1">
+              </h3>
+               <ul class="text-black flex gap-x-3 mb-1">
                   <li>
                     <Pill>Robot OS</Pill>
                   </li>
@@ -174,17 +180,19 @@ const builtWith = [
           </Card>
         </div>
         <div class="text-white md:basis-1/2 grow">
-          <Card color="#D7620F">
+          <Card color={educationColor}>
             <div class="flex flex-col justify-between items-start gap-4">
               <h2 class="text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif">
                 Education
               </h2>
               <div class="flex flex-wrap gap-8 mt-4">
-                <Image
+                <Card color="white">
+                  <Image
                   class="ml-2 h-auto w-25 h-30"
                   src={UNBLogo}
                   alt="UNB Logo"
                 />
+                </Card>
                 <div class="ml-5">
                   <h3 class="text-xl md:text-2xl lg:text-2xl sanchez">
                     Master of Computer Science
@@ -199,11 +207,13 @@ const builtWith = [
               </div>
 
               <div class="flex flex-wrap gap-8 mt-4">
-                <Image
+                <Card color="white">
+                  <Image
                   class="col-span-1 ml-2 h-auto w-25 h-30"
                   src={GuilanLogo}
                   alt="Guilan Logo"
                 />
+                </Card>
                 <div class="col-span-2">
                   <h3 class="text-xl md:text-2xl lg:text-2xl sanchez">
                     Bachelor of Computer Engineering

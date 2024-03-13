@@ -6,17 +6,20 @@ import { Button } from "@eliancodes/brutal-ui";
 
 interface Props {
   count?: number;
+  color?: string;
 }
 
-const { count } = Astro.props;
+const { count, color } = Astro.props;
 
 const posts = await getCollection("blog").then((posts) =>
   posts.slice(0, count ?? 2),
 );
+console.log('color' + color);
+
 ---
 
 <section class="mt-0 basis-full lg:basis-1/2 grow">
-  <Card color="#E4E6F3">
+  <Card color= {color}>
     <div class="flex justify-between items-start">
       <h2 class="text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif">Projects</h2>
       <div class="hidden md:block">
