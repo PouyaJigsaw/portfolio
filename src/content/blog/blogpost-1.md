@@ -6,13 +6,23 @@ tags:
   - Robot Operating System
   - Python
   - User Experience
-imgUrl: '../../assets/jackal.png'
+imgUrl: '../../assets/jackal_mock.jpg'
 description: Independently built a large robotic system with more than 4,000 lines of code. Incorporated the Model-View-Controller (MVC) architecture to modularize dialogue and avatar system.
 layout: '../../layouts/BlogPost.astro'
 ---
 # Social Teleoperation Interface
-Our main goal was
-to find out whether adding social elements to an interface would increase trust in a teleoperation (remote control of a robot from a distance) system. More information about the methodology, research goals and task design is explained in my master's thesis.
+Our main goal was to find out whether adding social elements to an interface would increase trust in a teleoperation (remote control of a robot from a distance) system.
+
+## Design Criteria
+We designed a scenario where the operator has to control a shared autonomy robot and handle two tasks at the same time. In some cases, one task can be delegated to the robot if the operator trusts the robot’s autonomous capabilities.  
+We had to design a video-game like mission for the operator and engineer each part of the journey (such as a linear video game like uncharted) so that we are sure about we are analyzing the right data. We also had to engineer the number of mistakes the operator and the robot did in the experiment, at the right place and the right time. The main challenge was to priming them to believe the mistakes we made by themselves, not the creator of the system!
+  ![Image 1](src/assets/jackal.png)
+  *Two conditions of the experiment: social and non-social. which one increase trust?*
+
+We used the narrative of trust formation, trust violation, and trust repair in our experiment. Before the experiment, the participant does a practice session where they get familiar with the system and the agent. This is where the trust formation happens, also the user will build an expectation of the difficulty of both tasks. In the real experiment, the agent makes a series of mistakes and violates trust. After the robot uses trust repair strategies, the operator can choose whether to delegate the task or not. This choice should depend on the amount of trust the operator puts on the robot.
+To emphasize on the importance of this choice, we linked the participant’s compensation to their performance while using the system, which means the robot’s mistake can reduce their compensation. Since performance of each participant can be different, we staged every part of the experiment to make sure everyone experiences the same narrative of trust formation, violation, and repair.
+The key point in this experiment is where the trust repair happens. While social cues can affect each stage of the trust cycle, studies in social HRI have shown that social repair strategies have the potential to restore trust. We used the explicitly social agent’s sad emotion while acknowledging mistake by using the word “sorry”, and then promises to do better following the term “I got ya buddy” as an attempt to create a bond.
+
 
 
 
@@ -69,11 +79,14 @@ We had to create a narrative where:
 3. the agent asks the user about delegating tasks to itself in the future.
 
 All of these had to happen in a rigid narrative, like Uncharted, or Call of Duty (single player) where the game is linear, so each person experiences
-the same narrative regardless of their performance. I used [State Pattern][13] to control each part of the
-experiment.
+the same narrative regardless of their performance. I used [State Pattern][13] to control each part of the experiment.
+
+![Interface](src/assets/interface1.png)
+![Interface 2](src/assets/interface2.png)
 
 [13]:
 ![image](https://github.com/PouyaJigsaw/teleop-interface/assets/33330581/642a8349-ad64-4dfc-b667-8e67cb9a2b82)
+
 
 
 ## Technical Aspects
