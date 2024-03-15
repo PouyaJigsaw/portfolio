@@ -11,7 +11,7 @@ description: Independently built a large robotic system with more than 4,000 lin
 layout: '../../layouts/BlogPost.astro'
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/obbHqZM5LpA?si=KLdzgnlASYi3wkNb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/obbHqZM5LpA?si=KLdzgnlASYi3wkNb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # Introduction 
 In robot teleoperation, operators and robots collaborate to achieve goals through shared autonomy, reducing operator workload. Trusting the robot is critical for the operator's success, as low trust results in operators not delegating tasks to the robot, even if doing the task themselves creates a high workload that reduces their performance. Research shows trust repair is challenging, but social HRI suggests that robots can rebuild trust in social situations through social strategies such as acknowledging mistakes and promising to do better. This study explores integrating these social strategies and interfaces into teleoperation to enhance trust repair. We compared a social cue-based interface to a conventional one, theorizing that adding in social cues would increase the effectiveness of social trust-repair strategies. Our study found that participants view the social cue-based interface as more capable, a factor that can make the participant put more trust on the system.
