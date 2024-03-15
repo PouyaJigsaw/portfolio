@@ -10,7 +10,8 @@ description: Employed a machine learning (DRL) algorithm to train an intelligent
 imgUrl: '../../assets/gridsoccer.jpeg'
 layout: "../../layouts/BlogPost.astro"
 ---
-
+<style>body {text-align: left}</style>
+<style>body {text-align: justify}</style>
 The project focuses on exploring Unity Engine's potential as a benchmark for AI research using the MLToolkit. We developed "GridSoccer," a 2.5D video game, and employed the policy-based Proximal Policy Optimization (PPO) algorithm to train agents. This was my final year project in 2019.
 
 In this game, there are two players: red and green. One player acts as the attacker by having the ball, while the other plays as the defender. The goal is for the attacker to send the ball to the opponent's goal, while the defender's objective is to prevent this.

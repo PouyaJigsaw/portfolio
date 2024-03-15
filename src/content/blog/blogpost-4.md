@@ -12,7 +12,8 @@ imgUrl: '../../assets/difficulty.png'
 layout: "../../layouts/BlogPost.astro"
 ---
 
-
+<style>body {text-align: left}</style>
+<style>body {text-align: justify}</style>
 
 The goal of this study is to find out the impact of the two approaches that is used in implementing dynamic difficulty on player’s overall experience: One where the dynamic difficulty is implemented, and it does not tell the player about the changes - Automatic dynamic difficuly system. The second approach is that the dynamic difficulty is implemented but while it is trying to change the difficulty it asks the player whether they would like to increase or decrease difficulty, giving players choice - choice based dynamic difficulty system. In this paper we call the first approach automatic dynamic difficulty system and the second one, choice-based dynamic difficulty system.
 

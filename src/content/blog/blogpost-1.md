@@ -10,6 +10,8 @@ imgUrl: '../../assets/jackal_mock.jpg'
 description: Independently built a large robotic system with more than 4,000 lines of code. Incorporated the Model-View-Controller (MVC) architecture to modularize dialogue and avatar system.
 layout: '../../layouts/BlogPost.astro'
 ---
+<style>body {text-align: left}</style>
+<style>body {text-align: justify}</style>
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/obbHqZM5LpA?si=KLdzgnlASYi3wkNb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

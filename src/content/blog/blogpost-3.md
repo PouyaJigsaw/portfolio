@@ -11,7 +11,8 @@ tags:
 imgUrl: '../../assets/darkmaze.jpeg'
 layout: ../../layouts/BlogPost.astro
 ---
-
+<style>body {text-align: left}</style>
+<style>body {text-align: justify}</style>
 This project was a part of my internship for the Gilamard Studio. I was responsible for prototyping a game idea that was proposed before but it was abandoned. I was also involved in level design, puzzle design and interaction design (mainly). I solely finished the prototype at the end of the internship.
 
 

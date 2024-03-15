@@ -11,7 +11,8 @@ imgUrl: '../../assets/hololens2.jpg'
 description: Developed an experimental Mixed Reality solution for inspection of construction products. Designed interactions that reveal information of the product and its components.
 layout: '../../layouts/BlogPost.astro'
 ---
-
+<style>body {text-align: left}</style>
+<style>body {text-align: justify}</style>
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/HbED_942vzI?si=gmXUjLFQFAMqm9ki" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
