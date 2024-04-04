@@ -6,6 +6,7 @@ interface Props {
 const navigationItems = [
   { name: "Home", url: "/" },
   { name: "Blog", url: "/blog/" },
+  { name: "CV", url: "/cv/cv.pdf"}
 ];
 
 const socialIcons = [
@@ -38,6 +39,7 @@ const { pageTitle } = Astro.props;
             <a
               class="text-lg font-medium hover:text-orange hover:underline transition-all duration-150 ease-in-out"
               href={item.url}
+              download={item.name === "CV" ? true : undefined} 
               title={`Go to ${item.name}`}
             >
               {item.name}
@@ -52,7 +54,7 @@ const { pageTitle } = Astro.props;
               href={item.url}
               class="hover:text-orange hover:underline transition-all duration-150 ease-in-out"
               target="_blank"
-              title={`'See @ElianCodes on ${item.name}`}
+              title={`'${item.name}`}
             >
               <div class:list={[item.icon, "w-6 h-6"]} />
             </a>
